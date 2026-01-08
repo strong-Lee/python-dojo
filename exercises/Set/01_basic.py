@@ -138,4 +138,3 @@ is_disjoint_false = set_a.isdisjoint(set_b)
 print(f"{set_a} 和 {set_b} 是否不相交: {is_disjoint_false}")
 
 print("\n--- 集合操作示例结束 ---")
-

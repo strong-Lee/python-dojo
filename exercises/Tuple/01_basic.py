@@ -56,7 +56,9 @@ original_tuple = ('apple', 'banana', 'cherry')
 print(f"原始元组: {original_tuple}")
 
 # 假设我们想把 'banana' 改成 'grape'
-list_from_tuple = list(original_tuple)
+#list_from_tuple = list(original_tuple)
+# list[str] 带类型注解的变量赋值(python3.6引入的特性)
+list_from_tuple: list[str] = list(original_tuple)
 list_from_tuple[1] = 'grape'
 modified_tuple = tuple(list_from_tuple)
 print(f"将 'banana' 修改为 'grape' 后的新元组: {modified_tuple}")
